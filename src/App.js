@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
 import FactsList from './facts-list';
-import SelectedFact from './selected-fact'
+import SelectedFact from './selected-fact';
+import thomasFacts from './facts';
 
 class App extends Component {
 
-  factHasBeenSelected(fact) {
+  constructor() {
+	  super();
+	  console.log('thomasFacts', thomasFacts);
+	  this.state = {
+		  selectedFact: { title: 'Learn you something', body: 'Click a fact on the left'}
+	  }
 
+	  this.factHasBeenSelected = this.factHasBeenSelected.bind(this)
+  }
+
+  factHasBeenSelected(fact) {
+	  this.setState({ selectedFact: fact});
   }
 
 
@@ -33,8 +44,17 @@ class App extends Component {
         </div>
         <main className="mdl-layout__content">
           <div className="page-content">
-            <FactsList />
-            <SelectedFact />
+		  	<div className="mdl-grid">
+			  <div className="mdl-cell mdl-cell--3-col">
+			  	<FactsList thomasFacts={thomasFacts} selectFact={this.factHasBeenSelected} />
+			  </div>
+			  <div className="mdl-cell mdl-cell--9-col">
+			  	<SelectedFact selectedFact={this.state.selectedFact}/>
+			  </div>
+
+			</div>
+			
+			
           </div>
         </main>
       </div>
