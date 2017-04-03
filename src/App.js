@@ -29,7 +29,7 @@ class App extends Component {
             <span className="mdl-layout-title facts-title">Thomas Facts</span>
             <div className="mdl-layout-spacer"></div>
             <nav className="mdl-navigation mdl-layout--large-screen-only">
-              <a className="mdl-navigation__link" href=""><i className="material-icons  mail-link">mail_outline</i></a>
+              <a className="mdl-navigation__link" href="mailto:info@thomasfacts.com"><i className="material-icons  mail-link">mail_outline</i></a>
             </nav>
           </div>
         </header>
@@ -53,8 +53,8 @@ class App extends Component {
 			  </div>
 
 			</div>
-			
-			
+
+
           </div>
         </main>
       </div>
