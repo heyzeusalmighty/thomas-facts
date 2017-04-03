@@ -1,24 +1,19 @@
-/*.App {
-  text-align: center;
+
+
+.fact-in-list {
+  font-family: 'Lora', serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h2 {
+  font-family: 'Lora', serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.facts-title {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
 }
 
-.App-intro {
-  font-size: large;
+.mail-link {
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/

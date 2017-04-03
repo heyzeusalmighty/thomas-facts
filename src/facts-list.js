@@ -12,7 +12,7 @@ class FactsList extends Component {
     render() {
 
         let facts = this.props.thomasFacts.map(fact => (
-        <li className="mdl-list__item" key={fact.title} onClick={() => this.props.selectFact(fact)}>
+        <li className="mdl-list__item fact-in-list" key={fact.title} onClick={() => this.props.selectFact(fact)}>
                 <span className="mdl-list__item-primary-content">
                     {fact.title}
                 </span>

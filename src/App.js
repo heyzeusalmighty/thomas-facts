@@ -23,13 +23,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header className="mdl-layout__header">
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header whole-thing">
+        <header className="mdl-layout__header mdl-layout__header--transparent">
           <div className="mdl-layout__header-row">
-            <span className="mdl-layout-title">Title</span>
+            <span className="mdl-layout-title facts-title">Thomas Facts</span>
             <div className="mdl-layout-spacer"></div>
             <nav className="mdl-navigation mdl-layout--large-screen-only">
-              <a className="mdl-navigation__link" href="">Link</a>
+              <a className="mdl-navigation__link" href=""><i className="material-icons  mail-link">mail_outline</i></a>
             </nav>
           </div>
         </header>
